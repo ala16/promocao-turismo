@@ -38,6 +38,9 @@
   .btn-wa svg{width:26px;height:26px;flex:none}
   .btn-wa.amarelo{background:var(--amarelo);color:var(--verde);box-shadow:0 6px 0 #c9a400,0 10px 24px rgba(0,0,0,.25)}
   .btn-wa.amarelo:active{box-shadow:0 2px 0 #c9a400}
+  .btn-form{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:14px;background:#fff;color:var(--verde);text-decoration:none;font-weight:900;font-size:1.02rem;padding:14px 18px;border-radius:14px;border:2px solid var(--verde);box-shadow:0 5px 0 var(--verde);text-align:center;line-height:1.2}
+  .btn-form:active{transform:translateY(3px);box-shadow:0 2px 0 var(--verde)}
+  .hero .btn-form{border-color:#fff;box-shadow:0 5px 0 rgba(0,0,0,.35)}
   .btn-nota{text-align:center;font-size:.85rem;color:var(--suave);margin-top:12px}
 
   /* Hero */
@@ -179,7 +182,8 @@
     <a class="btn-wa amarelo js-wa" data-msg="Olá! Quero garantir minha vaga no curso gratuito de Promoção e Comercialização de Turismo Rural em Joanópolis." href="#">
       <svg><use href="#wa"/></svg> QUERO MINHA VAGA GRÁTIS
     </a>
-    <p class="btn-nota" style="color:rgba(255,255,255,.8)">Inscrição rápida pelo WhatsApp · Vagas limitadas</p>
+    <a class="btn-form js-form" href="https://forms.gle/1pxbvu5PC3Nk4k287" target="_blank" rel="noopener">📝 Fazer inscrição pelo formulário</a>
+    <p class="btn-nota" style="color:rgba(255,255,255,.8)">Inscreva-se pelo WhatsApp ou pelo formulário · Vagas limitadas</p>
   </div>
 </header>
 
@@ -285,6 +289,7 @@
     <a class="btn-wa js-wa" data-msg="Olá! Quero me inscrever no curso de Turismo Rural (aulas das 8h às 17h)." href="#">
       <svg><use href="#wa"/></svg> Quero me inscrever
     </a>
+    <a class="btn-form js-form" href="https://forms.gle/1pxbvu5PC3Nk4k287" target="_blank" rel="noopener">📝 Fazer inscrição pelo formulário</a>
   </div>
 </section>
 
@@ -300,6 +305,7 @@
       <a class="btn-wa js-wa" data-msg="Olá! Quero reservar minha vaga gratuita no curso de Turismo Rural antes que acabe." href="#">
         <svg><use href="#wa"/></svg> Reservar minha vaga gratuita
       </a>
+      <a class="btn-form js-form" href="https://forms.gle/1pxbvu5PC3Nk4k287" target="_blank" rel="noopener">📝 Fazer inscrição pelo formulário</a>
     </div>
   </div>
 </section>
@@ -328,7 +334,7 @@
     <span class="kicker">Dúvidas</span>
     <h2>Perguntas <em>frequentes</em></h2>
     <details><summary>O curso é mesmo gratuito?</summary><p>Sim! Não há nenhum custo de inscrição ou mensalidade, e ainda são fornecidos café da manhã, almoço, material didático e certificado, tudo de graça. É uma iniciativa do SENAR-SP, FAESP, Sindicato Rural de Piracaia e Prefeitura de Joanópolis.</p></details>
-    <details><summary>Como faço minha inscrição?</summary><p>É só tocar em qualquer botão verde desta página. Você será levado ao WhatsApp com uma mensagem pronta; basta enviar e nossa equipe confirma sua vaga.</p></details>
+    <details><summary>Como faço minha inscrição?</summary><p>Você tem duas opções: preencher o <a href="https://forms.gle/1pxbvu5PC3Nk4k287" target="_blank" rel="noopener"><strong>formulário de inscrição</strong></a> ou tocar em qualquer botão verde desta página, que abre o WhatsApp com uma mensagem pronta. É só enviar que nossa equipe confirma sua vaga.</p></details>
     <details><summary>Preciso já ter um negócio de turismo?</summary><p>Não. O curso serve tanto para quem já recebe visitantes quanto para quem está pensando em começar a trabalhar com turismo na propriedade.</p></details>
     <details><summary>As aulas são on-line?</summary><p>Não, o curso é presencial, no O Buscador Místico (Bairro Paiol Queimado, Joanópolis/SP).</p></details>
     <details><summary>Quais são os horários?</summary><p>Todas as aulas são das <strong>8h às 17h</strong>, em todos os 5 dias do curso.</p></details>
@@ -336,6 +342,7 @@
       <a class="btn-wa js-wa" data-msg="Olá! Tenho uma dúvida sobre o curso de Turismo Rural e quero me inscrever." href="#">
         <svg><use href="#wa"/></svg> Tirar dúvidas e me inscrever
       </a>
+      <a class="btn-form js-form" href="https://forms.gle/1pxbvu5PC3Nk4k287" target="_blank" rel="noopener">📝 Fazer inscrição pelo formulário</a>
     </div>
   </div>
 </section>
@@ -393,7 +400,8 @@
     "📍 *Local:* O Buscador Místico\n" +
     "Estrada Soldado Manoel Lopes de Carvalho, S/N, Bairro Paiol Queimado, Joanópolis/SP\n\n" +
     "⚠️ *As vagas são limitadas!* Não deixe para a última hora.\n\n" +
-    "👉 Veja todos os detalhes e faça sua inscrição pelo WhatsApp:\n" + location.href.split("#")[0] + "\n\n" +
+    "📝 *Faça sua inscrição:*\nhttps://forms.gle/1pxbvu5PC3Nk4k287\n\n" +
+    "👉 Veja todos os detalhes no site:\n" + location.href.split("#")[0] + "\n\n" +
     "📲 Conhece alguém que vive do campo? *Encaminhe esta mensagem!*";
 
   document.getElementById("texto-divulgar").value = convite;
