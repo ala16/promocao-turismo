@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Curso Gratuito de Turismo Rural | Joanópolis/SP</title>
+<meta name="description" content="Curso gratuito e presencial de Promoção e Comercialização de Turismo Rural em Joanópolis/SP. Aulas em 18/11, 19/11, 25/11, 26/11 e 03/12. Inscreva-se pelo WhatsApp.">
+<meta name="theme-color" content="#0f4d23">
+<meta property="og:title" content="Curso GRATUITO: Promoção e Comercialização de Turismo Rural">
+<meta property="og:description" content="Aprenda a divulgar roteiros, vender experiências e valorizar sua propriedade rural. Presencial em Joanópolis/SP. Vagas limitadas!">
+<meta property="og:image" content="assets/og.jpg">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --verde:#0f4d23; --verde-2:#1a6b31; --verde-claro:#e9f5ec; --lima:#7cc242;
+    --amarelo:#ffd60a; --texto:#1d2a20; --suave:#5b6b60; --branco:#fff;
+    --wa:#25d366; --wa-escuro:#128c4a; --raio:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Nunito,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--texto);background:#f6faf6;line-height:1.55;-webkit-font-smoothing:antialiased;padding-bottom:84px}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:560px;margin:0 auto;padding:0 18px}
+  h2{font-size:1.65rem;line-height:1.2;font-weight:900;color:var(--verde);margin-bottom:12px}
+  h2 em{font-style:normal;color:var(--verde-2);background:linear-gradient(transparent 62%,var(--amarelo) 62%)}
+  section{padding:48px 0}
+  .kicker{display:inline-block;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--verde-2);background:var(--verde-claro);padding:5px 12px;border-radius:99px;margin-bottom:12px}
+  .lead{color:var(--suave);font-size:1.05rem;margin-bottom:22px}
+
+  /* Botão WhatsApp */
+  .btn-wa{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;background:var(--wa);color:#fff;text-decoration:none;font-weight:900;font-size:1.08rem;padding:16px 20px;border-radius:14px;box-shadow:0 6px 0 var(--wa-escuro),0 10px 24px rgba(18,140,74,.35);transition:transform .12s,box-shadow .12s;text-align:center;line-height:1.2}
+  .btn-wa:active{transform:translateY(4px);box-shadow:0 2px 0 var(--wa-escuro),0 4px 10px rgba(18,140,74,.3)}
+  .btn-wa svg{width:26px;height:26px;flex:none}
+  .btn-wa.amarelo{background:var(--amarelo);color:var(--verde);box-shadow:0 6px 0 #c9a400,0 10px 24px rgba(0,0,0,.25)}
+  .btn-wa.amarelo:active{box-shadow:0 2px 0 #c9a400}
+  .btn-nota{text-align:center;font-size:.85rem;color:var(--suave);margin-top:12px}
+
+  /* Hero */
+  .logos{background:#fff;padding:10px 0;border-bottom:4px solid var(--lima)}
+  .logos p{font-size:.72rem;text-align:center;color:var(--suave);font-weight:700;letter-spacing:.02em}
+  .logos strong{color:var(--verde)}
+  .hero{position:relative;color:#fff;padding:40px 0 44px;background:
+      linear-gradient(180deg,rgba(8,45,20,.78) 0%,rgba(10,60,26,.88) 55%,var(--verde) 100%),
+      url(assets/casa.jpg) center/cover no-repeat;}
+  .selos{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+  .selo{font-weight:900;font-size:.8rem;padding:6px 12px;border-radius:99px;background:var(--amarelo);color:var(--verde);text-transform:uppercase;letter-spacing:.04em}
+  .selo.b{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.35)}
+  .hero h1{font-size:2.15rem;line-height:1.08;font-weight:900;margin-bottom:14px;text-shadow:0 2px 12px rgba(0,0,0,.35)}
+  .hero h1 span{display:block;color:var(--amarelo);font-size:2.6rem}
+  .hero p.sub{font-size:1.08rem;opacity:.95;margin-bottom:22px}
+  .hero-info{display:grid;gap:10px;margin-bottom:24px}
+  .hero-info div{display:flex;gap:12px;align-items:flex-start;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:12px 14px;font-size:.95rem}
+  .hero-info b{display:block;color:var(--amarelo);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em}
+  .ico{font-size:1.4rem;line-height:1}
+
+  /* Pilares */
+  .pilares{display:grid;gap:12px}
+  .pilar{background:#fff;border-radius:var(--raio);padding:18px;border:1px solid #dfece2;box-shadow:0 4px 16px rgba(15,77,35,.06);display:flex;gap:14px}
+  .pilar .num{flex:none;width:46px;height:46px;border-radius:50%;background:var(--verde);color:var(--amarelo);display:grid;place-items:center;font-size:1.35rem}
+  .pilar h3{font-size:1.08rem;color:var(--verde);margin-bottom:2px}
+  .pilar p{font-size:.95rem;color:var(--suave)}
+
+  /* Conteúdo */
+  .bg-verde{background:var(--verde);color:#fff}
+  .bg-verde h2{color:#fff}
+  .bg-verde h2 em{color:var(--amarelo);background:none}
+  .bg-verde .lead{color:rgba(255,255,255,.85)}
+  .bg-verde .kicker{background:rgba(255,255,255,.12);color:var(--amarelo)}
+  .modulos{list-style:none;display:grid;gap:10px;margin-bottom:26px;counter-reset:m}
+  .modulos li{counter-increment:m;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:14px 14px 14px 58px;position:relative}
+  .modulos li::before{content:counter(m,decimal-leading-zero);position:absolute;left:14px;top:13px;font-weight:900;color:var(--amarelo);font-size:1.15rem}
+  .modulos b{display:block;font-size:1rem}
+  .modulos span{font-size:.9rem;opacity:.8}
+
+  /* Vantagens */
+  .vantagens{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:26px}
+  .vant{background:#fff;border-radius:16px;padding:16px 14px;border:1px solid #dfece2;text-align:center}
+  .vant .e{font-size:1.8rem;margin-bottom:6px}
+  .vant b{display:block;color:var(--verde);font-size:.98rem;line-height:1.2;margin-bottom:4px}
+  .vant p{font-size:.84rem;color:var(--suave);line-height:1.35}
+
+  /* Para quem */
+  .checks{list-style:none;display:grid;gap:10px;margin-bottom:26px}
+  .checks li{background:#fff;border-radius:14px;padding:13px 14px 13px 48px;position:relative;border:1px solid #dfece2;font-weight:700}
+  .checks li::before{content:"✓";position:absolute;left:14px;top:11px;width:24px;height:24px;border-radius:50%;background:var(--lima);color:#fff;display:grid;place-items:center;font-size:.85rem;font-weight:900}
+
+  /* Agenda */
+  .datas{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:18px}
+  .data{background:#fff;color:var(--verde);border-radius:14px;padding:12px 2px;text-align:center;border:2px solid var(--lima)}
+  .data b{display:block;font-size:1.35rem;line-height:1;font-weight:900}
+  .data span{font-size:.72rem;font-weight:800;text-transform:uppercase;color:var(--suave)}
+  .local{background:#fff;border-radius:var(--raio);padding:18px;border:1px solid #dfece2;margin-bottom:22px}
+  .local h3{color:var(--verde);font-size:1.15rem;margin-bottom:4px}
+  .local p{color:var(--suave);font-size:.95rem}
+  .local a.mapa{display:inline-block;margin-top:10px;font-weight:800;color:var(--verde-2)}
+
+  /* Destaque gratuito */
+  .gratis{background:linear-gradient(135deg,var(--amarelo),#ffe866);border-radius:22px;padding:26px 20px;text-align:center;color:var(--verde);box-shadow:0 10px 30px rgba(201,164,0,.3)}
+  .gratis .tag{font-weight:900;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase}
+  .gratis .preco{font-size:3rem;font-weight:900;line-height:1;margin:6px 0}
+  .gratis p{font-weight:700;margin-bottom:18px}
+  .gratis .btn-wa{box-shadow:0 6px 0 var(--wa-escuro)}
+
+  /* Flyer */
+  .flyer{border-radius:var(--raio);overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.18);margin-bottom:22px}
+
+  /* FAQ */
+  details{background:#fff;border:1px solid #dfece2;border-radius:14px;margin-bottom:10px;overflow:hidden}
+  summary{cursor:pointer;list-style:none;padding:15px 44px 15px 16px;font-weight:800;color:var(--verde);position:relative}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";position:absolute;right:16px;top:10px;font-size:1.5rem;color:var(--lima);font-weight:900}
+  details[open] summary::after{content:"–"}
+  details p{padding:0 16px 16px;color:var(--suave);font-size:.95rem}
+
+  footer{background:#0a3518;color:rgba(255,255,255,.8);padding:30px 0;font-size:.85rem;text-align:center}
+  footer strong{color:#fff}
+
+  /* Barra fixa */
+  .barra{position:fixed;left:0;right:0;bottom:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:10px 14px calc(10px + env(safe-area-inset-bottom));box-shadow:0 -6px 20px rgba(0,0,0,.12);transform:translateY(110%);transition:transform .3s}
+  .barra.on{transform:none}
+  .barra .wrap{padding:0;display:flex;align-items:center;gap:10px}
+  .barra small{flex:1;font-size:.78rem;font-weight:800;color:var(--verde);line-height:1.2}
+  .barra small span{display:block;color:var(--suave);font-weight:700}
+  .barra .btn-wa{width:auto;flex:none;padding:12px 16px;font-size:.98rem;box-shadow:0 4px 0 var(--wa-escuro)}
+  .barra .btn-wa svg{width:22px;height:22px}
+
+  @media (min-width:700px){
+    .hero{padding:70px 0}
+    .hero h1{font-size:2.8rem}.hero h1 span{font-size:3.4rem}
+  }
+  @media (max-width:360px){
+    .hero h1{font-size:1.85rem}.hero h1 span{font-size:2.2rem}
+    .data b{font-size:1.1rem}
+  }
+</style>
+</head>
+<body>
+
+<!-- Ícone do WhatsApp reutilizado nos botões -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="wa" viewBox="0 0 32 32"><path fill="currentColor" d="M16.04 3C8.86 3 3.04 8.82 3.04 16c0 2.29.6 4.53 1.74 6.5L3 29l6.68-1.75A12.94 12.94 0 0 0 16.04 29C23.22 29 29 23.18 29 16S23.22 3 16.04 3Zm0 23.64c-2.02 0-4-.54-5.72-1.57l-.41-.24-3.96 1.04 1.06-3.86-.27-.4A10.6 10.6 0 0 1 5.4 16c0-5.87 4.77-10.64 10.64-10.64 5.86 0 10.6 4.77 10.6 10.64 0 5.86-4.74 10.64-10.6 10.64Zm5.83-7.96c-.32-.16-1.89-.93-2.18-1.04-.29-.11-.5-.16-.72.16-.21.32-.82 1.04-1.01 1.25-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.59-.95-.85-1.59-1.9-1.78-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.98-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.12 1.09-1.12 2.66s1.15 3.09 1.31 3.3c.16.21 2.26 3.45 5.48 4.84.77.33 1.37.53 1.83.68.77.24 1.47.21 2.02.13.62-.09 1.89-.77 2.16-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.61-.37Z"/></symbol>
+</svg>
+
+<div class="logos">
+  <div class="wrap">
+    <p>Realização: <strong>Sindicato Rural de Piracaia</strong> · <strong>FAESP</strong> · <strong>SENAR São Paulo</strong> · <strong>Prefeitura de Joanópolis</strong> (Sec. de Agricultura, Abastecimento e Meio Ambiente)</p>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="selos">
+      <span class="selo">100% Gratuito</span>
+      <span class="selo b">Presencial</span>
+      <span class="selo b">Joanópolis/SP</span>
+    </div>
+    <h1>Promoção e Comercialização de <span>Turismo Rural</span></h1>
+    <p class="sub">Aprenda a <strong>atrair mais visitantes</strong>, divulgar seus roteiros e <strong>vender experiências</strong> que valorizam a sua propriedade rural.</p>
+    <div class="hero-info">
+      <div><span class="ico">📅</span><span><b>Aulas</b>18/11 · 19/11 · 25/11 · 26/11 · 03/12</span></div>
+      <div><span class="ico">📍</span><span><b>Local</b>O Buscador Místico · Bairro Paiol Queimado, Joanópolis/SP</span></div>
+    </div>
+    <a class="btn-wa amarelo js-wa" data-msg="Olá! Quero garantir minha vaga no curso gratuito de Promoção e Comercialização de Turismo Rural em Joanópolis." href="#">
+      <svg><use href="#wa"/></svg> QUERO MINHA VAGA GRÁTIS
+    </a>
+    <p class="btn-nota" style="color:rgba(255,255,255,.8)">Inscrição rápida pelo WhatsApp · Vagas limitadas</p>
+  </div>
+</header>
+
+<!-- Pilares -->
+<section>
+  <div class="wrap">
+    <span class="kicker">O que você vai dominar</span>
+    <h2>Três pilares para fazer seu <em>turismo rural vender</em></h2>
+    <p class="lead">Não basta ter um lugar bonito: o turista precisa te encontrar, se encantar e reservar. O curso mostra o caminho na prática.</p>
+    <div class="pilares">
+      <div class="pilar"><div class="num">🗺️</div><div><h3>Divulgação de roteiros</h3><p>Monte e divulgue roteiros atrativos, use a internet e as redes sociais e apareça para o público certo.</p></div></div>
+      <div class="pilar"><div class="num">🛒</div><div><h3>Comercialização de experiências</h3><p>Transforme a vida no campo em experiências únicas que o turista quer viver, e pagar por elas.</p></div></div>
+      <div class="pilar"><div class="num">🏡</div><div><h3>Valorização da propriedade rural</h3><p>Descubra os atrativos da sua propriedade e posicione seu negócio com diferencial competitivo.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Conteúdo programático -->
+<section class="bg-verde">
+  <div class="wrap">
+    <span class="kicker">Conteúdo do curso</span>
+    <h2>O que você vai <em>aprender</em></h2>
+    <p class="lead">Conteúdo baseado na cartilha oficial do SENAR-SP <i>“Promoção e Comercialização de Turismo no Meio Rural”</i>.</p>
+    <ol class="modulos">
+      <li><b>Cenários e tendências do turismo</b><span>O novo perfil do turista e a economia da experiência</span></li>
+      <li><b>Autoavaliação do seu empreendimento</b><span>Onde você está hoje em promoção e vendas</span></li>
+      <li><b>Atrativos turísticos para comercializar</b><span>Identifique o que a sua propriedade tem de especial</span></li>
+      <li><b>Marketing e os 4 Ps</b><span>Produto, preço, praça e promoção aplicados ao turismo rural</span></li>
+      <li><b>O mercado turístico</b><span>Oferta e demanda, posicionamento, segmentação e pesquisa de mercado</span></li>
+      <li><b>Canais de distribuição</b><span>Turista autoguiado, agências, operadoras e parcerias</span></li>
+      <li><b>Estratégias de promoção e comercialização</b><span>Venda pessoal, promoções, propaganda, relações públicas e marketing direto</span></li>
+      <li><b>O processo de vendas</b><span>Etapas da venda e o perfil do bom vendedor</span></li>
+      <li><b>O uso da internet</b><span>Sites, portais, ferramentas on-line e redes sociais</span></li>
+      <li><b>Plano de promoção e comercialização</b><span>Monte o plano de vendas do seu negócio, passo a passo</span></li>
+    </ol>
+    <a class="btn-wa js-wa" data-msg="Olá! Vi o conteúdo do curso de Turismo Rural e quero me inscrever." href="#">
+      <svg><use href="#wa"/></svg> Quero aprender isso tudo
+    </a>
+  </div>
+</section>
+
+<!-- Vantagens -->
+<section>
+  <div class="wrap">
+    <span class="kicker">Por que fazer</span>
+    <h2>Vantagens de <em>participar</em></h2>
+    <p class="lead">Uma oportunidade rara de se qualificar sem gastar nada, aqui pertinho de você.</p>
+    <div class="vantagens">
+      <div class="vant"><div class="e">🎓</div><b>100% gratuito</b><p>Sem mensalidade e sem taxa de inscrição</p></div>
+      <div class="vant"><div class="e">👩‍🏫</div><b>Presencial</b><p>Tire dúvidas na hora e aprenda na prática</p></div>
+      <div class="vant"><div class="e">🏅</div><b>Qualidade SENAR</b><p>Metodologia de quem forma o produtor rural paulista</p></div>
+      <div class="vant"><div class="e">💰</div><b>Mais renda</b><p>Novas fontes de receita para a propriedade</p></div>
+      <div class="vant"><div class="e">🤝</div><b>Networking</b><p>Conheça outros empreendedores da região</p></div>
+      <div class="vant"><div class="e">📈</div><b>Plano de ação</b><p>Saia com um plano de vendas para o seu negócio</p></div>
+    </div>
+    <a class="btn-wa js-wa" data-msg="Olá! Quero aproveitar o curso gratuito de Turismo Rural. Como faço minha inscrição?" href="#">
+      <svg><use href="#wa"/></svg> Garantir minha vaga agora
+    </a>
+  </div>
+</section>
+
+<!-- Para quem é -->
+<section style="background:var(--verde-claro)">
+  <div class="wrap">
+    <span class="kicker" style="background:#fff">Para quem é</span>
+    <h2>Este curso é para <em>você</em> que…</h2>
+    <ul class="checks">
+      <li>É produtor(a) rural e quer uma nova fonte de renda</li>
+      <li>Tem pousada, sítio, chácara, café colonial ou restaurante rural</li>
+      <li>Oferece (ou quer oferecer) passeios, trilhas, colheita e vivências no campo</li>
+      <li>Produz artesanato, queijos, doces, cachaça ou produtos da roça</li>
+      <li>Trabalha ou quer trabalhar com turismo em Joanópolis e região</li>
+      <li>Quer aprender a vender mais usando a internet e as redes sociais</li>
+    </ul>
+    <a class="btn-wa js-wa" data-msg="Olá! Me identifiquei com o curso de Turismo Rural e quero participar." href="#">
+      <svg><use href="#wa"/></svg> Sou eu! Quero participar
+    </a>
+  </div>
+</section>
+
+<!-- Agenda e local -->
+<section id="agenda">
+  <div class="wrap">
+    <span class="kicker">Datas e local</span>
+    <h2>Anote na <em>agenda</em></h2>
+    <p class="lead">São 5 encontros presenciais. Participe de todos para aproveitar o conteúdo completo.</p>
+    <div class="datas">
+      <div class="data"><b>18</b><span>nov · qua</span></div>
+      <div class="data"><b>19</b><span>nov · qui</span></div>
+      <div class="data"><b>25</b><span>nov · qua</span></div>
+      <div class="data"><b>26</b><span>nov · qui</span></div>
+      <div class="data"><b>03</b><span>dez · qui</span></div>
+    </div>
+    <div class="local">
+      <h3>📍 O Buscador Místico</h3>
+      <p>Estrada Soldado Manoel Lopes de Carvalho, S/N<br>Bairro Paiol Queimado · Joanópolis/SP<br>CEP 12980-000</p>
+      <a class="mapa" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=O+Buscador+M%C3%ADstico+Estrada+Soldado+Manoel+Lopes+de+Carvalho+Joan%C3%B3polis+SP">Abrir no Google Maps →</a>
+    </div>
+    <a class="btn-wa js-wa" data-msg="Olá! Quero me inscrever no curso de Turismo Rural e saber os horários das aulas." href="#">
+      <svg><use href="#wa"/></svg> Inscrever-me e saber os horários
+    </a>
+  </div>
+</section>
+
+<!-- Gratuito -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="gratis">
+      <div class="tag">Investimento</div>
+      <div class="preco">R$ 0</div>
+      <p>Curso totalmente gratuito, oferecido pelo SENAR-SP com o Sindicato Rural de Piracaia e a Prefeitura de Joanópolis. As vagas são limitadas!</p>
+      <a class="btn-wa js-wa" data-msg="Olá! Quero reservar minha vaga gratuita no curso de Turismo Rural antes que acabe." href="#">
+        <svg><use href="#wa"/></svg> Reservar minha vaga gratuita
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Flyer -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <span class="kicker">Compartilhe</span>
+    <h2>Conhece alguém que <em>precisa ver isso?</em></h2>
+    <p class="lead">Mande o convite para amigos e vizinhos que trabalham no campo.</p>
+    <img class="flyer" src="assets/flyer.jpg" alt="Cartaz do curso gratuito e presencial de Promoção e Comercialização de Turismo Rural, com aulas em 18/11, 19/11, 25/11, 26/11 e 03/12 no O Buscador Místico, Joanópolis/SP" loading="lazy" width="1000" height="1058">
+    <a class="btn-wa js-share" href="#">
+      <svg><use href="#wa"/></svg> Enviar para um amigo
+    </a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <span class="kicker">Dúvidas</span>
+    <h2>Perguntas <em>frequentes</em></h2>
+    <details><summary>O curso é mesmo gratuito?</summary><p>Sim! Não há nenhum custo de inscrição ou mensalidade. É uma iniciativa do SENAR-SP, FAESP, Sindicato Rural de Piracaia e Prefeitura de Joanópolis.</p></details>
+    <details><summary>Como faço minha inscrição?</summary><p>É só tocar em qualquer botão verde desta página. Você será levado ao WhatsApp com uma mensagem pronta; basta enviar e nossa equipe confirma sua vaga.</p></details>
+    <details><summary>Preciso já ter um negócio de turismo?</summary><p>Não. O curso serve tanto para quem já recebe visitantes quanto para quem está pensando em começar a trabalhar com turismo na propriedade.</p></details>
+    <details><summary>As aulas são on-line?</summary><p>Não, o curso é presencial, no O Buscador Místico (Bairro Paiol Queimado, Joanópolis/SP).</p></details>
+    <details><summary>Quais são os horários?</summary><p>Os horários de cada encontro são informados na confirmação da inscrição pelo WhatsApp.</p></details>
+    <div style="margin-top:22px">
+      <a class="btn-wa js-wa" data-msg="Olá! Tenho uma dúvida sobre o curso de Turismo Rural e quero me inscrever." href="#">
+        <svg><use href="#wa"/></svg> Tirar dúvidas e me inscrever
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Curso Promoção e Comercialização de Turismo Rural</strong></p>
+    <p>Realização: Sindicato Rural de Piracaia · FAESP · SENAR São Paulo · Prefeitura Municipal de Joanópolis</p>
+  </div>
+</footer>
+
+<!-- Barra fixa de inscrição -->
+<div class="barra" id="barra">
+  <div class="wrap">
+    <small>Curso GRATUITO de Turismo Rural<span>Vagas limitadas · Joanópolis/SP</span></small>
+    <a class="btn-wa js-wa" data-msg="Olá! Quero me inscrever no curso gratuito de Turismo Rural." href="#"><svg><use href="#wa"/></svg> Inscrever</a>
+  </div>
+</div>
+
+<script>
+  /* ====== CONFIGURAÇÃO ======
+     Número do WhatsApp que recebe as inscrições.
+     Formato: 55 + DDD + número, só dígitos. Ex.: 5511987654321 */
+  var WHATSAPP_NUMERO = "5511999999999";
+  /* ========================== */
+
+  var base = "https://wa.me/" + WHATSAPP_NUMERO + "?text=";
+  document.querySelectorAll(".js-wa").forEach(function (a) {
+    a.href = base + encodeURIComponent(a.getAttribute("data-msg") || "Olá! Quero me inscrever no curso de Turismo Rural.");
+    a.target = "_blank"; a.rel = "noopener";
+  });
+
+  var convite = "Olha que oportunidade! Curso GRATUITO e presencial de Promoção e Comercialização de Turismo Rural em Joanópolis/SP (aulas 18/11, 19/11, 25/11, 26/11 e 03/12). Inscrições aqui: " + location.href.split("#")[0];
+  document.querySelectorAll(".js-share").forEach(function (a) {
+    a.href = "https://wa.me/?text=" + encodeURIComponent(convite);
+    a.target = "_blank"; a.rel = "noopener";
+  });
+
+  // Mostra a barra fixa depois que o visitante rola além do topo
+  var barra = document.getElementById("barra");
+  var hero = document.querySelector(".hero");
+  function checa() { barra.classList.toggle("on", window.scrollY > hero.offsetHeight * 0.8); }
+  window.addEventListener("scroll", checa, { passive: true }); checa();
+</script>
+</body>
+</html>
