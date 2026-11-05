@@ -112,7 +112,7 @@
   /* Texto para divulgar */
   .copiar{background:#fff;border:2px dashed var(--lima);border-radius:var(--raio);padding:16px;margin-bottom:14px}
   .copiar label{display:block;font-weight:900;color:var(--verde);margin-bottom:8px}
-  .copiar textarea{width:100%;min-height:360px;border:1px solid #dfece2;border-radius:12px;padding:12px;font:inherit;font-size:.92rem;line-height:1.45;color:var(--texto);background:#fbfdfb;resize:vertical}
+  .copiar textarea{width:100%;min-height:420px;border:1px solid #dfece2;border-radius:12px;padding:12px;font:inherit;font-size:.92rem;line-height:1.45;color:var(--texto);background:#fbfdfb;resize:vertical}
   .btn-copiar{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:12px;border:0;cursor:pointer;background:var(--verde);color:#fff;font:inherit;font-weight:900;font-size:1.05rem;padding:14px 20px;border-radius:14px;box-shadow:0 5px 0 #08321a}
   .btn-copiar:active{transform:translateY(3px);box-shadow:0 2px 0 #08321a}
   .btn-copiar.ok{background:var(--lima);box-shadow:0 5px 0 #5a9a2c}
@@ -360,14 +360,29 @@
   });
 
   var convite =
-    "🌿 *CURSO GRATUITO DE TURISMO RURAL* 🌿\n\n" +
-    "Você tem sítio, chácara, pousada ou produz no campo? Aprenda a *divulgar roteiros*, *vender experiências* e *valorizar sua propriedade rural*!\n\n" +
-    "🎓 Promoção e Comercialização de Turismo Rural\n" +
-    "✅ 100% gratuito e presencial (SENAR-SP)\n" +
-    "📅 Aulas: 18/11, 19/11, 25/11, 26/11 e 03/12\n" +
-    "📍 O Buscador Místico, Bairro Paiol Queimado, Joanópolis/SP\n\n" +
-    "⚠️ Vagas limitadas!\n" +
-    "👉 Saiba mais e inscreva-se: " + location.href.split("#")[0];
+    "🌿 *CURSO GRATUITO DE TURISMO RURAL EM JOANÓPOLIS* 🌿\n\n" +
+    "Você tem sítio, chácara, pousada, café colonial, restaurante rural ou produz no campo? Já pensou em receber visitantes e transformar a sua propriedade em uma *nova fonte de renda*? 🏡💰\n\n" +
+    "O turista de hoje não quer só olhar a paisagem: ele quer *viver experiências*! Colher fruta no pé, tomar café da roça, fazer trilha, conhecer a história da fazenda... E quem souber oferecer e divulgar isso sai na frente. 🚀\n\n" +
+    "Por isso o *SENAR-SP*, a *FAESP*, o *Sindicato Rural de Piracaia* e a *Prefeitura de Joanópolis* trazem o curso:\n\n" +
+    "🎓 *Promoção e Comercialização de Turismo Rural*\n\n" +
+    "📚 *O que você vai aprender:*\n" +
+    "▪️ Como divulgar seus roteiros e atrair mais turistas\n" +
+    "▪️ Como transformar a vida no campo em experiências que vendem\n" +
+    "▪️ Como valorizar a sua propriedade e criar diferenciais\n" +
+    "▪️ Marketing, preço e como encontrar o seu público\n" +
+    "▪️ Parcerias com agências e operadoras de turismo\n" +
+    "▪️ Como vender mais usando a internet e as redes sociais\n" +
+    "▪️ Como montar um plano de vendas para o seu negócio\n\n" +
+    "✅ *100% GRATUITO*\n" +
+    "✅ Presencial, com tira-dúvidas na hora\n" +
+    "✅ Qualidade SENAR\n" +
+    "✅ Ótima chance de conhecer outros empreendedores da região 🤝\n\n" +
+    "📅 *Aulas:* 18/11, 19/11, 25/11, 26/11 e 03/12\n" +
+    "📍 *Local:* O Buscador Místico\n" +
+    "Estrada Soldado Manoel Lopes de Carvalho, S/N, Bairro Paiol Queimado, Joanópolis/SP\n\n" +
+    "⚠️ *As vagas são limitadas!* Não deixe para a última hora.\n\n" +
+    "👉 Veja todos os detalhes e faça sua inscrição pelo WhatsApp:\n" + location.href.split("#")[0] + "\n\n" +
+    "📲 Conhece alguém que vive do campo? *Encaminhe esta mensagem!*";
 
   document.getElementById("texto-divulgar").value = convite;
   document.querySelectorAll(".js-share").forEach(function (a) {
