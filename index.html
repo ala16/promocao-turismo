@@ -23,7 +23,7 @@
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{font-family:Nunito,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--texto);background:#f6faf6;line-height:1.55;-webkit-font-smoothing:antialiased;padding-bottom:84px}
-  img{max-width:100%;display:block}
+  img{max-width:100%;height:auto;display:block}
   a{color:inherit}
   .wrap{max-width:560px;margin:0 auto;padding:0 18px}
   h2{font-size:1.65rem;line-height:1.2;font-weight:900;color:var(--verde);margin-bottom:12px}
@@ -107,7 +107,15 @@
   .gratis .btn-wa{box-shadow:0 6px 0 var(--wa-escuro)}
 
   /* Flyer */
-  .flyer{border-radius:var(--raio);overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.18);margin-bottom:22px}
+  .flyer{width:100%;height:auto;border-radius:var(--raio);overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.18);margin-bottom:22px}
+
+  /* Texto para divulgar */
+  .copiar{background:#fff;border:2px dashed var(--lima);border-radius:var(--raio);padding:16px;margin-bottom:14px}
+  .copiar label{display:block;font-weight:900;color:var(--verde);margin-bottom:8px}
+  .copiar textarea{width:100%;min-height:360px;border:1px solid #dfece2;border-radius:12px;padding:12px;font:inherit;font-size:.92rem;line-height:1.45;color:var(--texto);background:#fbfdfb;resize:vertical}
+  .btn-copiar{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:12px;border:0;cursor:pointer;background:var(--verde);color:#fff;font:inherit;font-weight:900;font-size:1.05rem;padding:14px 20px;border-radius:14px;box-shadow:0 5px 0 #08321a}
+  .btn-copiar:active{transform:translateY(3px);box-shadow:0 2px 0 #08321a}
+  .btn-copiar.ok{background:var(--lima);box-shadow:0 5px 0 #5a9a2c}
 
   /* FAQ */
   details{background:#fff;border:1px solid #dfece2;border-radius:14px;margin-bottom:10px;overflow:hidden}
@@ -292,10 +300,15 @@
   <div class="wrap">
     <span class="kicker">Compartilhe</span>
     <h2>Conhece alguém que <em>precisa ver isso?</em></h2>
-    <p class="lead">Mande o convite para amigos e vizinhos que trabalham no campo.</p>
+    <p class="lead">Ajude a divulgar! Copie o texto abaixo e mande para amigos, vizinhos e grupos de quem trabalha no campo.</p>
     <img class="flyer" src="assets/flyer.jpg" alt="Cartaz do curso gratuito e presencial de Promoção e Comercialização de Turismo Rural, com aulas em 18/11, 19/11, 25/11, 26/11 e 03/12 no O Buscador Místico, Joanópolis/SP" loading="lazy" width="1000" height="1058">
+    <div class="copiar">
+      <label for="texto-divulgar">📣 Copie e cole no WhatsApp, no status ou nos grupos:</label>
+      <textarea id="texto-divulgar" readonly></textarea>
+      <button type="button" class="btn-copiar" id="btn-copiar">📋 Copiar texto</button>
+    </div>
     <a class="btn-wa js-share" href="#">
-      <svg><use href="#wa"/></svg> Enviar para um amigo
+      <svg><use href="#wa"/></svg> Enviar direto no WhatsApp
     </a>
   </div>
 </section>
@@ -346,10 +359,38 @@
     a.target = "_blank"; a.rel = "noopener";
   });
 
-  var convite = "Olha que oportunidade! Curso GRATUITO e presencial de Promoção e Comercialização de Turismo Rural em Joanópolis/SP (aulas 18/11, 19/11, 25/11, 26/11 e 03/12). Inscrições aqui: " + location.href.split("#")[0];
+  var convite =
+    "🌿 *CURSO GRATUITO DE TURISMO RURAL* 🌿\n\n" +
+    "Você tem sítio, chácara, pousada ou produz no campo? Aprenda a *divulgar roteiros*, *vender experiências* e *valorizar sua propriedade rural*!\n\n" +
+    "🎓 Promoção e Comercialização de Turismo Rural\n" +
+    "✅ 100% gratuito e presencial (SENAR-SP)\n" +
+    "📅 Aulas: 18/11, 19/11, 25/11, 26/11 e 03/12\n" +
+    "📍 O Buscador Místico, Bairro Paiol Queimado, Joanópolis/SP\n\n" +
+    "⚠️ Vagas limitadas!\n" +
+    "👉 Saiba mais e inscreva-se: " + location.href.split("#")[0];
+
+  document.getElementById("texto-divulgar").value = convite;
   document.querySelectorAll(".js-share").forEach(function (a) {
     a.href = "https://wa.me/?text=" + encodeURIComponent(convite);
     a.target = "_blank"; a.rel = "noopener";
+  });
+
+  var btnCopiar = document.getElementById("btn-copiar");
+  btnCopiar.addEventListener("click", function () {
+    var ta = document.getElementById("texto-divulgar");
+    function feito() {
+      btnCopiar.textContent = "✅ Texto copiado! Agora é só colar";
+      btnCopiar.classList.add("ok");
+      setTimeout(function () { btnCopiar.textContent = "📋 Copiar texto"; btnCopiar.classList.remove("ok"); }, 3000);
+    }
+    function antigo() {
+      ta.removeAttribute("readonly"); ta.select(); ta.setSelectionRange(0, 99999);
+      try { document.execCommand("copy"); } catch (e) {}
+      ta.setAttribute("readonly", ""); window.getSelection().removeAllRanges(); feito();
+    }
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(ta.value).then(feito, antigo);
+    } else { antigo(); }
   });
 
   // Mostra a barra fixa depois que o visitante rola além do topo
