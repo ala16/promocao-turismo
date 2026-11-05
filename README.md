@@ -1,7 +1,7 @@
 # Landing page: Curso de Promoção e Comercialização de Turismo Rural
 
 Página para celular que divulga o curso gratuito e presencial em Joanópolis/SP
-(aulas 18/11, 19/11, 25/11, 26/11 e 03/12, no O Buscador Místico).
+(aulas 25/11, 26/11, 02/12, 03/12 e 10/12, no O Buscador Místico).
 
 ## Trocar o número do WhatsApp
 
