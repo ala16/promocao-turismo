@@ -14,3 +14,9 @@ Todos os botões de inscrição usam esse número.
 Cada push na `main` publica o site pelo GitHub Pages (workflow em
 `.github/workflows/pages.yml`). Em *Settings > Pages*, a fonte deve estar como
 **GitHub Actions**.
+
+## Página /vendas (Curso SENAR Vendas Online)
+
+`vendas/index.html` é a página do curso Vendas Online (4 e 5/12, Fazenda Rafael
+Buava, Nazaré Paulista/SP). Usa os mesmos botões, formulário e WhatsApp da home;
+o número fica na constante `WHATSAPP_NUMERO` dentro desse arquivo.
